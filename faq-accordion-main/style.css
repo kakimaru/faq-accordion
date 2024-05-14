@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "WorkSans", sans-serif;
+  box-sizing: border-box;
+  background-color: #F9EEFF;
+}
+
+.container {
+  background-image: url("/assets/images/background-pattern-desktop.svg");
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: 40%;
+  display: grid;
+  place-content: center;
+  padding: 80px;
+  max-height: 740px;
+  height: 100%;
+}
+
+.faqwrap {
+  margin: 0 auto;
+  max-width: 640px;
+  width: 100%;
+  height: auto;
+  padding: 40px 24px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 32px;
+  margin: 0;
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: 24px;
+}
+
+.title::before {
+  content: "";
+  background-image: url("assets/images/icon-star.svg");
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  background-size: contain;
+}
+
+.faqitem {
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.faqitem:last-of-type {
+  border: none;
+}
+
+.faqtitlewrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faqtitle {
+  font-size: 14px;
+  margin: 0;
+}
+
+.img-plus, .img-minus {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: none;
+}
+
+.is-visible {
+  display: block;
+}
+
+.faqtextwrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.faqtext {
+  font-size: 14px;
+  margin: 0;
+  color: #B0A6B1;
+  line-height: 160%;
+}
+
+.faqtitlewrap.active .is-visible {
+  display: block;
+}
+
+.attribution {
+  margin-bottom: 40px;
+}
+
+@media  screen and (max-width: 1200px) {
+  .container {
+    background-image: url("/assets/images/background-pattern-mobile.svg");
+    padding: 80px 16px;
+    background-size: 140%;
+    max-height: fit-content;
+  }
+  .faqwrap {
+    width: 90%;
+  }
+
+  .faqtext {
+    margin-top: 16px;
+  }
+  
+}
