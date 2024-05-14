@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  background-image: url("/assets/images/background-pattern-desktop.svg");
+  background-image: url("assets/images/background-pattern-desktop.svg");
   background-position: top;
   background-repeat: repeat-x;
   background-size: 40%;
@@ -107,7 +107,7 @@ body {
 
 @media  screen and (max-width: 1200px) {
   .container {
-    background-image: url("/assets/images/background-pattern-mobile.svg");
+    background-image: url("assets/images/background-pattern-mobile.svg");
     padding: 80px 16px;
     max-height: fit-content;
   }
