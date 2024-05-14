@@ -65,6 +65,7 @@ body {
   border: none;
   background-color: #fff;
   width: 100%;
+  text-align: left;
 }
 
 .faqtitle {
@@ -108,7 +109,6 @@ body {
   .container {
     background-image: url("/assets/images/background-pattern-mobile.svg");
     padding: 80px 16px;
-    background-size: 140%;
     max-height: fit-content;
   }
   .faqwrap {
