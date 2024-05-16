@@ -7,21 +7,21 @@ body {
 }
 
 .container {
-  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-image: url("assets/images/background-pattern-mobile.svg");
   background-position: top;
   background-repeat: repeat-x;
   background-size: 40%;
+  padding: 80px 16px;
+  max-height: fit-content;
   display: grid;
   place-content: center;
-  padding: 80px;
-  max-height: 740px;
   height: 100%;
 }
 
 .faqwrap {
   margin: 0 auto;
   max-width: 640px;
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 40px 24px;
   background-color: #fff;
@@ -73,15 +73,13 @@ body {
   margin: 0;
 }
 
-.img-plus, .img-minus {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-  display: none;
+button {
+  padding: 5px 30px 5px 0;
+  background: url("./assets/images/icon-plus.svg") center right no-repeat;
 }
 
-.is-visible {
-  display: block;
+button.active {
+  background-image: url("./assets/images/icon-minus.svg");
 }
 
 .faqtextwrap {
@@ -92,7 +90,7 @@ body {
 
 .faqtext {
   font-size: 14px;
-  margin: 0;
+  margin: 16px 0 0;
   color: #B0A6B1;
   line-height: 160%;
 }
@@ -105,18 +103,18 @@ body {
   margin-bottom: 40px;
 }
 
-@media  screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
-    background-image: url("assets/images/background-pattern-mobile.svg");
-    padding: 80px 16px;
-    max-height: fit-content;
+    background-image: url("assets/images/background-pattern-desktop.svg");
+    padding: 80px;
+    max-height: 740px;
   }
   .faqwrap {
-    width: 90%;
+    width: 100%;
   }
 
   .faqtext {
-    margin-top: 16px;
+    margin-top: 0;
   }
   
 }
